@@ -16,8 +16,9 @@ Include the library.
 var leadscore = require('node-leadscore')('YOUR_CLEARBIT_API_KEY');
 ```
 ##Method: lookup(email, options)
+Returns full Person object (see https://clearbit.com/docs#person-api) plus leadScore as *person.leadScore*.
 
-The default options are:
+Passing in options is not required (email address is required).
 
 ```
 {
@@ -32,4 +33,14 @@ The default options are:
   company_score:              10,
   total_score:                1415
 }
+```
+####Example
+```
+var leadscore = require('node-leadscore')('YOUR_CLEARBIT_API_KEY');
+
+leadscore.lookup('email@address.com').then(function(person){
+    if(person.leadScore > 0.5){
+        //baller!
+    }
+});
 ```
