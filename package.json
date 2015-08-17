@@ -1,0 +1,29 @@
+{
+  "name": "clearbit-leadscore",
+  "version": "1.0.0",
+  "description": "This library calculates a 'lead score', a simple score which gives you some indication that an email address is either associated with an influential individual, or a high profile company.",
+  "main": "leadscore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drei01/node-clearbit-leadscore.git"
+  },
+  "keywords": [
+    "node",
+    "clearbit",
+    "lead"
+  ],
+  "author": "Matthew Reid",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/drei01/node-clearbit-leadscore/issues"
+  },
+  "homepage": "https://github.com/drei01/node-clearbit-leadscore",
+  "dependencies": {
+    "clearbit": "^1.1.3",
+    "extend": "^3.0.0",
+    "q": "^1.4.1"
+  }
+}
