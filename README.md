@@ -7,13 +7,13 @@ This library calculates a 'lead score', a simple score which gives you some indi
 Install using npm.
 
 ```
-npm install node-leadscore --save
+npm install clearbit-leadscore --save
 ```
 
 Include the library.
 
 ```
-var leadscore = require('node-leadscore')('YOUR_CLEARBIT_API_KEY');
+var leadscore = require('clearbit-leadscore')('YOUR_CLEARBIT_API_KEY');
 ```
 ##Method: lookup(email, options)
 Returns full Person object (see https://clearbit.com/docs#person-api) plus leadScore as *person.leadScore*.
@@ -36,7 +36,7 @@ Passing in options is not required (email address is required).
 ```
 ####Example
 ```
-var leadscore = require('node-leadscore')('YOUR_CLEARBIT_API_KEY');
+var leadscore = require('clearbit-leadscore')('YOUR_CLEARBIT_API_KEY');
 
 leadscore.lookup('email@address.com').then(function(person){
     if(person.leadScore > 0.5){
