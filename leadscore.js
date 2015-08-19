@@ -17,7 +17,7 @@ module.exports = function (key) {
             deferred.resolve(result); 
         })
         .catch(function (err) {
-            deferred.resolve(0,null);//an error occured, return zero
+            deferred.resolve({leadScore:0},null);//an error occured, return zero
         });  
 
         return deferred.promise;

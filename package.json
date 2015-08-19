@@ -1,6 +1,6 @@
 {
   "name": "clearbit-leadscore",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library calculates a 'lead score', a simple score which gives you some indication that an email address is either associated with an influential individual, or a high profile company.",
   "main": "leadscore.js",
   "scripts": {
